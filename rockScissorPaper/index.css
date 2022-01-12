@@ -1,0 +1,119 @@
+@font-face {
+    font-family: mons;
+    src: url(./Montserrat-MediumItalic.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background: #d6d6d6;
+}
+
+.header {
+    z-index: 2;
+    font-family: mons;
+    height: 100vh;
+    width: 40vw;
+    background: linear-gradient(45deg , rgb(252, 85, 67), rgb(252, 227, 182));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(41, 41, 41);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 8px 8px 80px ;
+    position: relative;
+}
+
+.header .result {
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: white;
+    width: 75%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    animation: move .5s 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: hidden;
+}
+
+.header .result .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main {
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .button {
+    border: black solid 7px;
+    border-radius: 50%;
+    margin: 40px;
+    transition: .5s;
+}
+
+.main .button:active {
+    border: black solid 7px;
+    border-radius: 50%;
+    margin: 40px;
+    transition: .5s;
+}
+
+.main .button:hover {
+    cursor: pointer;
+    border: red solid 7px;
+    transition: .2s;
+    transform: translateY(7px);
+}
+
+.main .button img {
+    width: 90px;
+    height: 90px;
+}
+
+.content .main .RSP {
+    display: flex;
+}
+
+.content .main .title h2 {
+    font-family: mons;
+    font-size: 2.5rem;
+}
+.score{
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes move {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
