@@ -18,7 +18,7 @@
 }
 .allContent .calculator {
     width: 30vw;
-    height: 80vh;
+    height: 600px;
     background: #efff5d;
     border-radius: 30px;
     display: flex;
