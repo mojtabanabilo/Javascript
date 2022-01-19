@@ -10,6 +10,7 @@ Sentence.innerText = randomItem;
 let milisecond = 0;
 let minute = 0;
 let y;
+let finishTest = true;
 
 const xxx = function timerZone(){
     milisecond++;
@@ -30,12 +31,13 @@ function result(event){
     const eventChar = event.target.value;
     clearInterval(y);
     y = setInterval(xxx, 10);
-    if(eventChar === randomItem){
+    if(eventChar === randomItem || finishTest === false){
         clearInterval(y);
         button.style.background = "black";
         button.style.color = "white";
         button.style.border = "2px solid #ffffff";
         button.style.transition = "ease .2s";
+        finishTest = false;
     }
 };
 
