@@ -1,2 +1,2 @@
-# My-resumes
-Some work samples for js exercises
+# javascript
+A number of js exercises that I developed during the learning course
